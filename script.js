@@ -31,6 +31,6 @@ document.querySelectorAll(".reveal").forEach((element) => observer.observe(eleme
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const message = contactForm.querySelector(".form-message");
-  message.textContent = "구독해주셔서 감사합니다. 곧 만나요!";
+  message.textContent = "구독해주셔서 감사합니다. 새로운 작업 소식을 전해드릴게요!";
   contactForm.reset();
 });
