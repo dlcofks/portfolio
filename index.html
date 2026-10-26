@@ -74,7 +74,7 @@
           </div>
         </div>
         <div class="project-grid">
-          <article class="project-card project-card-large reveal">
+          <article class="project-card project-card-large reveal" data-project="tmap" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-modal" aria-label="T map mobility 프로젝트 상세 정보 보기">
             <div class="project-art art-orbit">
               <span class="art-caption">MOBILITY<br>FOR EVERYONE</span>
               <div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div>
@@ -86,7 +86,7 @@
             </div>
             <p class="project-summary">복잡한 이동을 간결하게 만드는 모빌리티 경험 리디자인</p>
           </article>
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-project="oatside" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Oatside 프로젝트 상세 정보 보기">
             <div class="project-art art-green">
               <span class="art-caption">YOUR<br>DAILY RITUAL</span>
               <div class="phone-shape"><span class="phone-notch"></span><span class="phone-spark">✦</span><b>good<br>morning</b></div>
@@ -97,7 +97,7 @@
             </div>
             <p class="project-summary">일상의 루틴을 새롭게 정의한 웰니스 브랜드 경험</p>
           </article>
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-project="notion" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Notion for teams 프로젝트 상세 정보 보기">
             <div class="project-art art-lilac">
               <span class="art-caption">MAKE SPACE<br>FOR IDEAS</span>
               <div class="lilac-shape shape-one"></div><div class="lilac-shape shape-two"></div><span class="lilac-word">work<br>better</span>
@@ -134,6 +134,29 @@
       <div class="social-links"><a href="#" aria-label="Instagram">Instagram</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a><a href="#home" aria-label="맨 위로 이동">Back to top ↑</a></div>
     </footer>
   </div>
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <div class="project-modal-content">
+      <button class="project-modal-close" type="button" aria-label="프로젝트 상세 정보 닫기">닫기 <span aria-hidden="true">×</span></button>
+      <p class="project-modal-eyebrow">Project details</p>
+      <h2 id="modal-title"></h2>
+      <p class="project-modal-notice">안내: 아래 역할, 기술, 성과 등은 실제 프로젝트 정보가 아닌 이해를 돕기 위한 예시입니다.</p>
+      <p class="project-modal-description" id="modal-description"></p>
+      <div class="project-modal-details">
+        <section>
+          <h3>담당 역할</h3>
+          <p id="modal-role"></p>
+        </section>
+        <section>
+          <h3>사용 기술</h3>
+          <p id="modal-technologies"></p>
+        </section>
+        <section>
+          <h3>주요 성과</h3>
+          <p id="modal-results"></p>
+        </section>
+      </div>
+    </div>
+  </dialog>
   <script src="script.js"></script>
 </body>
 </html>
